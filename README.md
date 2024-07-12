@@ -1,38 +1,41 @@
-# Personalized News Feed Server
+# Personalized News Feed Web Application
 
-This repository contains the server-side of the Personalized News Feed application. The project is written in TypeScript using Node.js and Express.js. PostgreSQL is used as the database.
+ #### This is a personalized news feed web application built with TypeScript, SQL, JavaScript, and npm. The application fetches news from different sources and presents them in a personalized manner to the user.  
 
-## Requirements
+## Getting Started
 
-- Node.js (v14 or above)
-- PostgreSQL
+ #### These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Setup
+### Prerequisites
 
-### 1. Clone the Repository
-
-        git clone https://github.com/username/project-name.git
-        cd project-name 
-
-### 2. Install Dependencies
-
+ #### Node.js and npm installed on your machine.
+ #### A PostgreSQL database.
+## Installing
+#### 1. Clone the repository to your local machine:
+        git clone https://github.com/erenbesikcioglu07/SERVER-Personalized-News-Feed-Web-Application.git
+#### 2. Navigate to the project directory:
+        cd SERVER-Personalized-News-Feed-Web-Application
+#### 3. Install the project dependencies:
         npm install
+#### 4. Fill the .env file in the root directory of the project and add your environment variables:   
+        DATABASE_URL="postgresql://<username>:<password>@localhost:5432/<database>?schema=public"
+        PORT=5000
+        JWT_SECRET=<your-jwt-secret>
 
-### 3. Fill the .env File     
+        NEWSAPI_KEY=<your-newsapi-key>
+        NEWSAPI_URL=https://newsapi.org/v2
+        GUARDIAN_API_KEY=<your-guardian-api-key>
+        GUARDIAN_API_URL=https://content.guardianapis.com
 
-### 4. Create the Database
-
-## Running the Server
-
-### 1. Start the Server
-
+#### 5. Run the project:        
         npm start
 
-## Project Structure
+## Features
+        Fetches news from different sources.
+        Presents news in a personalized manner to the user.
+        User authentication to ensure secure access.        
 
-        controllers: Business logic and control operations.
-        middleware: Middleware components.
-        models: Database models and relationships.
-        routes: Application routes.
-        services: Business services and database operations.
-        utils: Helper functions and utilities.
+## Built With
+        TypeScript
+        SQL
+        npm
